@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import {Welcome} from './components/Welcome.jsx';
 
+require('./style.scss');
 
 console.log("react rocks!");
 
