@@ -1,0 +1,11 @@
+$background-url: "../../dist/assets/images/backgrounds-blur.png";
+
+.welcomeContainer { 
+    background: url($background-url) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 480px;
+    color: #fff;
+}

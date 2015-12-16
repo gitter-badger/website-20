@@ -1,5 +1,4 @@
 var path = require('path'),
-    webpack = require('webpack'),
     node_modules = path.resolve(__dirname, 'node_modules'),
     contentBase = path.resolve(__dirname, 'dist');
 
@@ -15,10 +14,19 @@ var config = {
       query: {
         presets: ['react', 'es2015']
       }
+    },{
+      test: /\.scss$/,
+      loader: 'style!css!sass'
+    },{
+      test: /\.png$/,
+      loader: "url-loader?limit=100000"
+    },{
+      test: /\.jpg$/,
+      loader: "file-loader"
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', 'css', 'sass', 'scss', 'png', 'jpeg']
   },
   output: {
     path: contentBase,
@@ -27,10 +35,7 @@ var config = {
   },
   devServer: {
     contentBase
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ]
+  }
 }
 
 module.exports = config;
