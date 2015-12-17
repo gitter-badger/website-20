@@ -3,3 +3,4 @@
 *.log
 /dist/*.js
 /dist/*.css
+.tern-*

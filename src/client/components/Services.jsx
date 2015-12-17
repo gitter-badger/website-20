@@ -3,7 +3,7 @@ import React from "react";
 export class Services extends React.Component {
   render () {
     return (
-      <section>
+      <section id="services">
         <div className="services-container content">
            <h1>
              {this.props.servicesList}

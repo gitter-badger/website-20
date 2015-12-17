@@ -1,4 +1,10 @@
 $background-url: "../../dist/assets/images/backgrounds-blur.png";
+$green0: #43C17D;
+$yellow0: #FFEC49;
+$ocher0: #FFC553;
+$red0: #E85145;
+$blue0: #475AFF;
+
 
 * {
     box-sizing: border-box;
@@ -30,7 +36,7 @@ h1 {
 
 .welcome-container { 
     //background: url($background-url) no-repeat center center fixed;
-    background: #44C1BC;
+    background: $blue0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,6 +45,17 @@ h1 {
 }
 
 .services-container {
-    background: #A44037;
+    background: $red0;
+    color: #fff;
+}
+
+.about-container {
+    background: $green0;
+    color: #fff;
+    
+}
+
+.impressum-container {
+    background: $ocher0;
     color: #fff;
 }
